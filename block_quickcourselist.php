@@ -18,10 +18,16 @@
 /**
  * Defines the class for the Quick Course List block
  *
- * @package    block_quickcourselist
- * @author      Mark Johnson <mark.johnson@tauntons.ac.uk>
- * @copyright   2010 Tauntons College, UK
+ * @package    block_quickcourselistplus
+ * @author     Paul Martin <pmartin@nmc.edu>
+ * @copyright  2012 Northwestern Michigan College
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/**
+ * Forked from block_quickcourselist, authored by
+ *  Mark Johnson <mark.johnson@tauntons.ac.uk>
+ *  Copyright 2010 Tauntons College, UK
  */
 
 /**

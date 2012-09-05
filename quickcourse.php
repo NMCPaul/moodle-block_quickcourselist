@@ -18,9 +18,9 @@
 /**
  * Server-side script for generating response to AJAX search request
  *
- * @package    block_quickcourselist
- * @author      Mark Johnson <mark.johnson@tauntons.ac.uk>
- * @copyright   2010 Tauntons College, UK
+ * @package    block_quickcourselistplus
+ * @author     Paul Martin <pmartin@nmc.edu>
+ * @copyright  2012 Northwestern Michigan College
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

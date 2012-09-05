@@ -2,17 +2,20 @@ M.block_quickcourselist = {
 
     sesskey: null,
 
+
     init: function(Y, instanceid, sesskey) {
         this.Y = Y;
         this.sesskey = sesskey;
         this.instanceid = instanceid;
+        this.timer = null;
 
         this.progress = Y.one('#quickcourseprogress');
         this.xhr = null;
 
         Y.one('#quickcourselistsearch').on('keyup', function(e) {
             var searchstring = e.target.get('value');
-            this.search(searchstring);
+            clearTimeout(this.timer);
+            this.timer = setTimeout(function(){M.block_quickcourselist.search(searchstring);}, 400);
         }, this);
         Y.one('#quickcourseform').on('submit', function(e) {
             e.preventDefault();
@@ -23,6 +26,7 @@ M.block_quickcourselist = {
 
     search: function(string) {
 
+        this.timer = null;
         var Y = this.Y;
         uri = M.cfg.wwwroot+'/blocks/quickcourselist/quickcourse.php';
         if (this.xhr != null) {
